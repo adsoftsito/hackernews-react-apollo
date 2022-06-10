@@ -16,11 +16,13 @@ const Header = () => {
           new
         </Link>
         <div className="ml1">|</div>
+   
         <Link
           to="/search"
           className="ml1 no-underline black"
         >
           search
+        
         </Link>
         {authToken && (
           <div className="flex">
@@ -34,6 +36,23 @@ const Header = () => {
           </div>
         )}
       </div>
+   
+     <div className="ml1">|</div>
+
+      <div>
+
+
+
+        <Link
+          to="/recsys"
+
+          className="ml1 no-underline black"
+        >
+          rec sys
+        </Link>
+
+      </div>
+
       <div className="flex flex-fixed">
         {authToken ? (
           <div
